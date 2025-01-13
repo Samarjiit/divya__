@@ -5,6 +5,8 @@ import CreateTicket from "./components/createTicket/CreateTicket"
 import TicketDetails from "./components/ticketDetails/TicketDetail"
 import TopBar from "./components/TopBar"
 import SideBar from "./components/SideBar"
+import NotificationList from "./components/notification/NotificationList"
+import Tickets from "./components/tickets/TIcket"
 const App = () => {
   return (
     <Router>
@@ -13,8 +15,10 @@ const App = () => {
         <div className="main-content">
           <TopBar />
           <Routes>
-            <Route path="/" element={<CreateTicket />} />
+            <Route path="/" element={<Tickets />} />
             <Route path="/ticket-details" element={<TicketDetails />} />
+            <Route path="/notification" element={<NotificationList />} />
+            <Route path="/create-ticket" element={<CreateTicket />} />
           </Routes>
         </div>
       </div>
