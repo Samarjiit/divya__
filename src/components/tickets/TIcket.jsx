@@ -138,7 +138,7 @@ const Tickets = () => {
                 <h3 className="ticket-id">{`Ticket# ${ticket.id}`}</h3>
                 <h4>{ticket.title}</h4>
                 <p>{ticket.description}</p>
-                <hr className="ticket-divider" /> {/* Added horizontal line */}
+                <hr className="ticket-divider" />
                 <div className="ticket-footer">
                   <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIf4R5qPKHPNMyAqV-FjS_OTBB8pfUV29Phg&s"
